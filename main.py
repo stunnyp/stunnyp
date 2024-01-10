@@ -1,9 +1,20 @@
 from flask import Flask, jsonify, request
 from model.twit import Twit
+import json
 
 twits = []
 
 app = Flask(__name__)
+
+class CustomJSONEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, Twit):
+            return {'body': obj.body, 'author': obj.author}
+        else:
+            return super().default(obj)
+
+app.json_encoder = CustomJSONEncoder
+    
 
 @app.route('/ping', methods = ['GET'])
 def ping():
