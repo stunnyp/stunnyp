@@ -1,16 +1,6 @@
 ### Hi there 👋
 
-<!--
-**stunnyp/stunnyp** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on purchasing
-- 🌱 I’m currently learning py py py py python
-- 👯 I’m looking to collaborate on python projects
-- 🤔 I’m looking for help with leetcode
-- 💬 Ask me about na-na-na come on, come on
-- 📫 How to reach me: vk, tg, whatsapp  
-- 😄 Pronouns: ...
-- ⚡ Fun fact: 30 y.o. lol
--->
+POST запрос выполняется в формате: {"id": "16" , "body": "Bye wфывфвыфвыфвld", "author" : "@aqaguy"} по URL localhost:5000/twit
+PUT запрос выполняется в формате: названиесайта.рф/twit/id_твита и телом как у POST-запроса и изменение происходит по айди твита
+GET запрос выполняется в формате запроса по юрл localhost:5000/twit
+DELETE запрос выполняется в формате localhost:5000/twit/16 и удаление происходит по айди твита
